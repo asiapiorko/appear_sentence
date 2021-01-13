@@ -1,0 +1,11 @@
+def words_appear(sentence_1, sentence_2):
+    appear = []
+    not_appear =[]
+    s1_array = sentence_1.split()
+    s2_array = sentence_2.split()
+    for i in s1_array:
+        if i not in s2_array:
+            not_appear.append(i)
+        else:
+            appear.append(i)
+    return not_appear, appear
